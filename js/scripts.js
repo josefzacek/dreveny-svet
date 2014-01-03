@@ -31,4 +31,41 @@ $( document ).ready(function() {
 		open: function(){}, // Function: Open callback
 		close: function(){} // Function: Close callback
 	});
+
+
+
+/* google maps - contact page*/
+function initialize() {
+  var myLatlng = new google.maps.LatLng(48.7091167, 18.6445667);         // change  latitude/longitude  
+  var mapOptions = {
+    zoom: 11,                                                                                                        // higher number => closer
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+        streetViewControl: false,                                                                          // remove street view icon
+        mapTypeControl: false                                                                            // remove map type tabs
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions); 
+                        // map-mcanvas => div with #map-canvas in html code
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Dreveny Svet PD'  // title when hovered over marker
+  });
+  
+  
+  // code from stack overflow to keep marker in middle
+  var center;
+        function calculateCenter() {
+          center = map.getCenter();
+        }
+        google.maps.event.addDomListener(map, 'idle', function() {
+          calculateCenter();
+        });
+        google.maps.event.addDomListener(window, 'resize', function() {
+          map.setCenter(center);
+        });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
 });

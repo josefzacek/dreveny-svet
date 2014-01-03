@@ -42,8 +42,8 @@ img {
 }
 
 #wrapper {
-	max-width:1100px;
 	margin:auto;
+	width:98%;
 }
 .logo {
 	max-width:100px;
@@ -75,6 +75,14 @@ ul.footer-nav  {
 	padding-left:5px;
 	padding-right:5px;
 }
+
+/* contact page */
+	#map-canvas {
+        margin: 0 auto;
+        padding: 0;
+        width:100%;
+		height:180px;
+	}
 
 
 	
@@ -151,7 +159,11 @@ ul.footer-nav  {
         -moz-box-shadow: 0px 3px 26px #000000;
 		-webkit-box-shadow: 0px 3px 26px #000000;
 		box-shadow: 0px 3px 26px #000000;
-	}	
+	}
+	/* contact page */
+	#map-canvas {
+        height: 250px;
+	}
 }
 
 
@@ -162,6 +174,9 @@ ul.footer-nav  {
 	background: url(../images/fence.png) , url(../images/bg-section.jpg);
 	background-position: left top, left top;
 	background-repeat: repeat-x, repeat;
+  }
+  #wrapper {
+	  	max-width:1100px;
   }
    .one_fourth  {
 	width: 25%;
@@ -221,4 +236,10 @@ ul.footer-nav  {
 		float:left;
 		border-right:1px solid #000;
 	}
+	
+	
+	/* contact page */
+	#map-canvas {
+        height:350px;
+     }
 }
