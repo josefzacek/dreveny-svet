@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*! responsive-nav.js 1.0.23 by @viljamis */
+@media only screen and (max-width: 769px) { 
+	.nav-collapse ul {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		display: block;
+		list-style: none;
+	}
+	
+	.nav-collapse li {
+		width: 100%;
+		display: block;
+		float:left;
+	}
+	
+	.js .nav-collapse {
+		clip: rect(0 0 0 0);
+		max-height: 0;
+		position: absolute;
+		display: block;
+		overflow: hidden;
+		zoom: 1;
+	}
+	
+	.nav-collapse.opened {
+		max-height: 9999px;
+	}
+
+	.nav-toggle {
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		width: 45px;
+		height: 45px;
+		float: right;
+		text-indent: -9999px;
+		overflow: hidden;
+		display: block;
+		background: #78be20 url(../images/navbar-icon.png) no-repeat 47% 47%;
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		border-radius: 8px;
+	}
+	.nav-collapse a {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 112.5%;
+		letter-spacing: 2px;
+		color: white;
+		text-decoration: none;
+		width: 100%;
+		background: #78be20;
+		border-bottom: 1px solid white;
+		padding: .5em 1em;
+		float: left;
+		}
+}
+@media screen and (min-width: 769px) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}

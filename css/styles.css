@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* CSS Document */
+/* www.josefzacek.com /*
+
+/* mobile properties*/
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+	text-align:center;
+}
+body {
+	background-image:url(../images/bg-section.jpg);
+	font-size:80%;
+}
+img {
+    width:100%;
+    height:auto;
+}
+
+/* column shortcodes */
+.full_width,
+.one_half,
+.one_third,
+.two_third,
+.one_fourth,
+.three_fourth,
+.one_fifth,
+.two_fifth,
+.three_fifth,
+.four_fifth,
+.one_sixth {
+	clear: both;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0.5%;
+	transition:All 0.7248s linear;
+	-webkit-transition:All 0.7248s linear;
+	-moz-transition:All 0.7248s linear;
+}
+
+#wrapper {
+	max-width:1100px;
+	margin:auto;
+}
+.logo {
+	max-width:100px;
+	display: block;
+	margin: 0 auto
+}
+.phone {
+		display:none;
+}
+nav ul {
+		padding: 0;
+		text-align: center;
+	}
+#slideshow {
+		display:none;
+}
+footer {
+	background-image:url(../images/footer-line.jpg);
+	background-repeat:repeat-x;
+	text-align:center;
+	padding-top:1px;
+}
+ul.footer-nav  {
+	  padding:0;
+}
+.footer-nav li {
+	list-style:none;
+	display:inline-block;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+
+	
+
+        
+/* tablet properties*/
+@media only screen and (min-width: 481px) {
+  body {
+	  font-size:85%;
+  }
+  .full_width,
+  .one_half,
+  .one_third,
+  .two_third,
+  .one_fourth,
+  .three_fourth,
+  .one_fifth,
+  .two_fifth,
+  .three_fifth,
+  .four_fifth,
+  .one_sixth {
+	  float: left;
+	  clear:none;
+  }
+  .clear_column {
+	  clear:both;
+	  display:block;
+	  font-size:0; height:0;
+	  line-height:0; width:100%;
+	  overflow: hidden;
+  }
+  .last_column  {
+	float:right;
+  }
+  .full_width  {
+	  width: 100%;
+  }
+  .one_half  {
+	  width: 50%;
+  }
+  .one_third  {
+	  width: 33.3%;
+  }
+  .two_third  {
+	  width: 66.6%;
+  }
+  .one_fourth  {
+	  width: 50%;
+  }
+  .three_fourth  {
+	  width: 75%;
+  }
+  .one_fifth  {
+	  width: 20%;
+  }
+  .two_fifth  {
+	  width: 40%;
+  }
+  .three_fifth  {
+	  width: 60%;
+  }
+  .four_fifth  {
+	  width: 80%;
+  }
+  .one_sixth  {
+	  width: 33.3%;
+	}
+	
+	/* tablet custom */
+	#slideshow {
+		display:block;
+		border: 7px solid #fff;
+        background-color:#fff;
+        -moz-box-shadow: 0px 3px 26px #000000;
+		-webkit-box-shadow: 0px 3px 26px #000000;
+		box-shadow: 0px 3px 26px #000000;
+	}	
+}
+
+
+/* desktop properties */
+@media only screen and (min-width: 769px) {
+  body {
+	font-size:95%;
+	background: url(../images/fence.png) , url(../images/bg-section.jpg);
+	background-position: left top, left top;
+	background-repeat: repeat-x, repeat;
+  }
+   .one_fourth  {
+	width: 25%;
+  }
+  .one_sixth  {
+	  width: 16.6%;
+  }
+  .logo {
+		float:left;
+		max-width:154px;
+	}
+	
+	.phone {
+		display:block;
+		text-align:right;
+		margin:0;
+		padding-top:10px;
+		color:#fff;
+		text-shadow:2px 2px 5px #000000;
+	}
+	nav {
+		float:right;
+		font-size:140%;
+	}
+	nav ul li {
+		list-style:none;
+		display:inline-block;
+	}
+	nav ul li a {
+		text-decoration:none;
+		padding:5px 10px;
+		background-color:#78be20;
+		color:#fff;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+	}
+	nav ul li a:hover {
+		background-color:#4b772a;
+		-webkit-transition: background-color 1.5s;
+		-moz-transition:    background-color 1.5s;
+		-ms-transition:     background-color 1.5s;
+		-o-transition:      background-color 1.5s;
+		transition:         background-color 1.5s;
+	}
+	nav ul li .current {
+		color:#000;
+	}
+	#slideshow {
+		border:13px solid #fff;
+	}
+	footer {
+		text-align:right;
+		margin-bottom:10px;
+	}
+	.footer-nav li{
+		float:left;
+		border-right:1px solid #000;
+	}
+}
