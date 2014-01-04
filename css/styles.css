@@ -169,12 +169,19 @@ ul.footer-nav  {
 		-webkit-box-shadow: 0px 3px 26px #000000;
 		box-shadow: 0px 3px 26px #000000;
 	}
+	
 	/* contact page */
 	#map-canvas {
         height: 250px;
 	}
 	#kontakt .tablet-full {
 		width:100%;
+	}
+	/* gallery page */
+	#galeria .gallery-item {
+		background-color:#78BE20;
+		padding:4px;
+		margin:3px;
 	}
 }
 

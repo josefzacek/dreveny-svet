@@ -1,5 +1,6 @@
 $( document ).ready(function() {
-    // slideshow
+	
+	// slideshow
 	$(".rslides").responsiveSlides({
 		auto: true,             // Boolean: Animate automatically, true or false
 		speed: 500,            // Integer: Speed of the transition, in milliseconds
@@ -31,8 +32,9 @@ $( document ).ready(function() {
 		open: function(){}, // Function: Open callback
 		close: function(){} // Function: Close callback
 	});
-
-
+	
+	
+	
 
 /* google maps - contact page*/
 function initialize() {
