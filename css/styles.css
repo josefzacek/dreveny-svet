@@ -267,11 +267,4 @@ ul.footer-nav  {
 	 #kontakt .tablet-full {
 		width:50%;
 	}
-	#kontakt .tel-add-img {
-		background-image:url(../images/fence.png);
-		background-repeat:repeat-x;
-	}
-	#kontakt .tel-add-img h3 {
-		color:#fff;
-	}
 }
